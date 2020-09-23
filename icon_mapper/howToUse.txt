@@ -1,0 +1,40 @@
+1) have python3 installed
+2) open up powershell and navigate to this directory
+3) run the script with following syntax
+
+iconMapping.py <spritesheet name> <prefix>
+
+console example: PS E:\GitHub\swg-tools\icon_mapper> python .\iconMapping.py ui_redemption_icons_07 r07 > out.txt
+
+case: no arguements provided:
+
+PS E:\GitHub\swg-tools\icon_mapper> python .\iconMapping.py
+Please provide 2 arguements
+ example syntax: iconMapping.py ui_new_icons_temp6 base06
+ 
+ 
+example output will look like the following:
+ 
+                                <ImageStyle
+                                        Name='r07_9_8'
+                                        Source='ui_redemption_icons_07'
+                                        SourceRect='401,449,448,496'
+                                />
+								
+								
+there should be about 100 entries. from here you can paste this into ui_styles.inc
+
+i usually paste in the command section to get command listings, but your usecase my very
+
+example of where to paste:
+
+				pistoleer_pistol_melee_defense='r03_6_0'
+				pistoleer_dead_eye='base01_0_6'
+				pistoleer_attack_disarming_shot='base01_1_4'
+				pistoleer_attack_pistol_whip='base08_9_1'
+			>
+				<ImageStyle
+					Name='r04_0_0'
+					Source='ui_redemption_icons_04'
+					SourceRect='17,17,64,64'
+				/>
